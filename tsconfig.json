@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "sourceMap": true,
+
+        "lib": ["es2015", "dom"],
+        "baseUrl": "./",
+
+        // Shortcuts to avoid relative path hell "../../../"
+        "paths": {
+            "utils": ["src/utils"]
+        },
+
+        // Gives error if there are implied "<any>" types.
+        "noImplicitAny": false, 
+
+        // Allows you to access non-constant properties, such as object[keyVar]
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
