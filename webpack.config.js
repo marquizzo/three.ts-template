@@ -14,7 +14,10 @@ module.exports = {
     },
 
     resolve: {
-       extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+       extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
+        alias: {
+            Utils: path.resolve(__dirname, "./src/utils/"),
+        },
     },
 
     module:{

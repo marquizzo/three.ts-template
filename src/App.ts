@@ -4,16 +4,26 @@
  * Entry from Webpack, generates Three.js View
  */
 
-// import View from "./webgl/View";
+import View from "./webgl/View";
 
 class App {
-    // private view: View;
+    private view: View;
 
     constructor() {
         const canvasBox = <HTMLCanvasElement>document.getElementById("webgl-canvas");
-        console.log(canvasBox);
+        this.view = new View(canvasBox);
 
-        // this.view = new View(canvasBox);
+        window.addEventListener("resize", this.resize);
+        this.update(0);
+    }
+
+    private resize = (): void => {
+        this.view.onWindowResize(window.innerWidth, window.innerHeight);
+    }
+
+    private update = (t: number): void => {
+        this.view.update(t / 1000);
+        requestAnimationFrame(this.update);
     }
 }
 

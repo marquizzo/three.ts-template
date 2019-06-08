@@ -7,13 +7,14 @@
         "lib": ["es2015", "dom"],
         "baseUrl": "./",
 
-        // Shortcuts to avoid relative path hell "../../../"
+        // Shortcuts to avoid up-one-level hell: 
+        // Turns "../../../utils" into "Utils"
         "paths": {
-            "utils": ["src/utils"]
+            "Utils": ["src/utils"]
         },
 
         // Gives error if there are implied "<any>" types.
-        "noImplicitAny": false, 
+        "noImplicitAny": true, 
 
         // Allows you to access non-constant properties, such as object[keyVar]
         "suppressImplicitAnyIndexErrors": true
