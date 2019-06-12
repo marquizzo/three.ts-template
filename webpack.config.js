@@ -15,6 +15,9 @@ module.exports = {
 
 	resolve: {
 		extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
+
+		// Shortcuts to avoid up-one-level hell: 
+		// Turns "../../../utils" into "Utils"
 		alias: {
 			Utils: path.resolve(__dirname, "./src/utils/"),
 		},
