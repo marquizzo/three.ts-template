@@ -1,25 +1,25 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "sourceMap": true,
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"sourceMap": true,
 
-        "lib": ["es2015", "dom"],
-        "baseUrl": "./",
+		"lib": ["es2015", "dom"],
+		"baseUrl": "./",
 
-        // Shortcuts to avoid up-one-level hell: 
-        // Turns "../../../utils" into "Utils"
-        "paths": {
-            "Utils": ["src/utils"]
-        },
+		// Shortcuts to avoid up-one-level hell: 
+		// Turns "../../../utils" into "Utils"
+		"paths": {
+			"Utils": ["src/utils"]
+		},
 
-        // Gives error if there are implied "<any>" types.
-        "noImplicitAny": true, 
+		// Gives error if there are implied "<any>" types.
+		"noImplicitAny": true, 
 
-        // Allows you to access non-constant properties, such as object[keyVar]
-        "suppressImplicitAnyIndexErrors": true
-    },
-    "exclude": [
-        "node_modules"
-    ]
+		// Allows you to access non-constant properties, such as object[keyVar]
+		"suppressImplicitAnyIndexErrors": true
+	},
+	"exclude": [
+		"node_modules"
+	]
 }
