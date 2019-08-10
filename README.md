@@ -2,7 +2,7 @@
 ThreeJS, TypeScript, GLSL, &amp; Webpack boilerplate for quick prototyping.
 
 ### What is this?
-With the introduction of [Github Templates](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), I figured I should share the boilerplate configuration I always use when starting a new Three.js + TypeScript + Webpack project. Simply click on the green "Use this template" button above to start your repo with this setup (or you can clone it as usual).
+With the introduction of [Github Templates](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), I've decided to share the boilerplate configuration I always use when starting a new Three.js + TypeScript + Webpack project. Simply click on the green "Use this template" button above to start your repo with this setup (or you can clone it as usual).
 
 ### Features:
 - **Custom shader support:** Simply save your shader files as `.glsl`, `.vs`, or `.fs` then use in TypeScript with `import shader from "./path/fileName.glsl";`
