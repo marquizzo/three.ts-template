@@ -14,7 +14,7 @@
     "url": "git+https://github.com/marquizzo/three.ts-template.git"
   },
   "dependencies": {
-    "three": "^0.107.0",
+    "three": "^0.112.0",
     "webpack": "4.33.0"
   },
   "devDependencies": {
