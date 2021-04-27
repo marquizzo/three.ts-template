@@ -16,13 +16,13 @@ export default class Shape {
 	timeU: THREE.IUniform;
 
 	constructor(parentScene: THREE.Scene) {
-		const geom = new THREE.TorusBufferGeometry(5, 1, 32, 32);
+		const geom = new THREE.TorusKnotGeometry(3, 1, 128, 32);
 		const mat = new THREE.RawShaderMaterial({
 			uniforms: {
 				time: {value: 0}
 			},
 			vertexShader: vertShader,
-			fragmentShader: fragShader,
+			fragmentShader: fragShader
 		});
 		this.timeU = mat.uniforms.time;
 		this.mesh = new THREE.Mesh(geom, mat);
