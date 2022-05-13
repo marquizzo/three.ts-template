@@ -19,4 +19,4 @@ To add more aliases:
 3. Type `npm install`
 4. Then `npm run`
 5. Point your browser to [`http://localhost:8000/web`](http://localhost:8000/web)
-6. If you see the spinning torus, you're ready to roll! All source files are in the `src/` folder.
+6. If you see the spinning torus knot, you're ready to roll! All source files are in the `src/` folder.

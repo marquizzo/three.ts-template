@@ -1,16 +1,19 @@
 const webpack = require("webpack");
 const path = require("path");
 
-// http://webpack.github.io/docs/configuration.html
+// Webpack 5 configuration
+// https://webpack.js.org/configuration
 module.exports = {
+	mode: "development",
 	entry:{
 		main: "./src/App.ts",
 	},
 
 	// Outputs compiled bundle to `./web/js/main.js`
 	output:{
-		path: __dirname + "/web/",
-		filename: "js/[name].js"
+		path: path.resolve(__dirname, "/web/"),
+		filename: "js/[name].js",
+		publicPath: "/web/",
 	},
 
 	resolve: {
@@ -40,9 +43,8 @@ module.exports = {
 
 	// Enables dev server to be accessed by computers in local network
 	devServer: {
-		host: "0.0.0.0",
+		static: path.join(__dirname, '/'),
 		port: 8000,
-		publicPath: "/web/",
-		disableHostCheck: true
+		host: "0.0.0.0",
 	}
 }
