@@ -1,5 +1,5 @@
 # ThreeTS-Template
-ThreeJS, TypeScript, GLSL, &amp; Webpack boilerplate for quick prototyping.
+ThreeJS, TypeScript, GLSL, &amp; Webpack boilerplate for quick prototyping. (Updated May 2022 to Webpack 5, and Three.js r140. All NPM dependencies now show 0 security vulnerabilities)
 
 ### What is this?
 With the introduction of [Github Templates](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), I've decided to share the boilerplate configuration I always use when starting a new Three.js + TypeScript + Webpack project. Simply click on the green "Use this template" button above to start your repo with this setup (or you can clone it as usual).
